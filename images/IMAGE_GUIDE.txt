@@ -1,0 +1,154 @@
+IMAGE REQUIREMENTS FOR RYSTIEN COINS WEBSITE
+==============================================
+
+This file lists all the images needed for the website. Place all images in the "images" folder.
+
+RECOMMENDED IMAGE SPECIFICATIONS:
+- Format: JPG or PNG
+- Quality: High resolution (at least 1920x1080 for hero images)
+- File size: Optimized for web (under 500KB per image)
+- Style: Professional, modern, diverse representation
+
+REQUIRED IMAGES:
+================
+
+HOME PAGE:
+----------
+No specific images required (uses CSS gradients and colors)
+
+ABOUT PAGE:
+-----------
+1. about-story.jpg
+   - Dimensions: 800x600px
+   - Content: Office interior, team meeting, or professional workspace
+   - Style: Bright, professional, welcoming
+
+2. why-choose.jpg
+   - Dimensions: 800x600px
+   - Content: Happy client, handshake, or professional consultation
+   - Style: Trust-building, professional
+
+SERVICES PAGE:
+--------------
+3. personal-loan.jpg
+   - Dimensions: 800x600px
+   - Content: Person using phone/laptop, happy individual
+   - Style: Relatable, modern, positive
+
+4. business-loan.jpg
+   - Dimensions: 800x600px
+   - Content: Business owner, shop/office, entrepreneur
+   - Style: Professional, ambitious, growth-focused
+
+5. savings.jpg
+   - Dimensions: 800x600px
+   - Content: Piggy bank with coins (like your brand image), investment concept
+   - Style: Growth, prosperity, financial security
+
+6. proof-of-funds.jpg
+   - Dimensions: 800x600px
+   - Content: Luggage, passport, travel documents, airport
+   - Style: Travel-ready, international, professional
+
+7. asset-acquisition.jpg
+   - Dimensions: 800x600px
+   - Content: Car keys, house keys, property, vehicle
+   - Style: Achievement, ownership, success
+
+8. money-transfer.jpg
+   - Dimensions: 800x600px
+   - Content: Mobile banking, international transfer, currency
+   - Style: Fast, secure, global
+
+BLOG PAGE:
+----------
+9. blog-1.jpg - "How to Get Loans Fast in Nigeria"
+   - Content: Person with phone, fast approval concept
+   
+10. blog-2.jpg - "Proof of Funds Guide"
+    - Content: Documents, visa, passport
+    
+11. blog-3.jpg - "Savings vs Investment"
+    - Content: Growth chart, money management
+    
+12. blog-4.jpg - "Business Funding Tips"
+    - Content: Business meeting, entrepreneur
+    
+13. blog-5.jpg - "Travel Finance Tips"
+    - Content: Travel, airplane, destination
+    
+14. blog-6.jpg - "Credit Score Guide"
+    - Content: Credit card, financial planning
+    
+15. blog-7.jpg - "Emergency Fund"
+    - Content: Safety net, piggy bank, savings
+    
+16. blog-8.jpg - "Loan Repayment"
+    - Content: Calculator, payment, financial planning
+    
+17. blog-9.jpg - "Passive Income"
+    - Content: Money growth, investment returns
+
+BLOG IMAGE DIMENSIONS: 400x300px each
+
+OPTIONAL IMAGES:
+================
+- favicon.ico (16x16px, 32x32px) - Website icon for browser tab
+- og-image.jpg (1200x630px) - For social media sharing
+- logo.png - Transparent PNG version of Rystien Coins logo
+
+WHERE TO GET IMAGES:
+====================
+
+FREE STOCK PHOTO WEBSITES:
+- Unsplash.com
+- Pexels.com
+- Pixabay.com
+- Freepik.com (some free, some premium)
+
+SEARCH KEYWORDS:
+- "Nigerian business"
+- "African entrepreneur"
+- "financial planning"
+- "loan approval"
+- "savings investment"
+- "business growth"
+- "travel visa"
+- "money transfer"
+
+TIPS FOR SELECTING IMAGES:
+===========================
+1. Choose images with Nigerian/African representation when possible
+2. Ensure images are high quality and professional
+3. Maintain consistent style across all images
+4. Optimize images for web before uploading (use tools like TinyPNG.com)
+5. Use images that reflect your brand colors (yellow, black, white)
+6. Ensure images are properly licensed for commercial use
+
+CURRENT BRAND IMAGES:
+=====================
+Based on the screenshots provided, you already have:
+- Investment/savings image (jar with coins and plant)
+- Loan consultation image (relationship manager)
+- Travel/proof of funds image (luggage)
+- Services overview image
+
+You can use these as reference for the style and quality of additional images needed.
+
+IMAGE OPTIMIZATION TOOLS:
+=========================
+- TinyPNG.com - Compress images without losing quality
+- Squoosh.app - Google's image compression tool
+- ImageOptim - Desktop app for Mac
+- RIOT - Desktop app for Windows
+
+ALTERNATIVE: USE PLACEHOLDER IMAGES
+====================================
+If you don't have images ready, you can temporarily use:
+- https://via.placeholder.com/800x600/FFC107/000000?text=Rystien+Coins
+- Replace dimensions and text as needed
+
+Example:
+<img src="https://via.placeholder.com/800x600/FFC107/000000?text=Personal+Loans" alt="Personal Loans">
+
+Remember to replace placeholders with real images before launching the website!
