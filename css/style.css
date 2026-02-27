@@ -749,19 +749,50 @@ body {
     }
 
     .nav-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: var(--white);
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 300px;
+        background: linear-gradient(135deg, var(--white) 0%, var(--light-gray) 100%);
         flex-direction: column;
-        padding: 20px;
-        box-shadow: var(--shadow);
-        display: none;
+        padding: 100px 30px 30px;
+        box-shadow: -8px 0 20px rgba(0,0,0,0.15);
+        transition: right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .nav-menu.active {
-        display: flex;
+        right: 0;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 15px 20px;
+        border-radius: 8px;
+        transition: all 0.3s;
+        font-size: 16px;
+    }
+    
+    .nav-menu a:hover,
+    .nav-menu a.active {
+        background: var(--primary-yellow);
+        color: var(--black);
+        transform: translateX(-5px);
+    }
+    
+    .btn-primary-nav {
+        background: var(--primary-yellow);
+        color: var(--black) !important;
+        padding: 15px 20px !important;
+        text-align: center;
+        margin-top: 10px;
     }
 
     .hero {
