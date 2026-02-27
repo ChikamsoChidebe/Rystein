@@ -155,7 +155,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+    background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=1920&h=1080&fit=crop');
+    background-size: cover;
+    background-position: center;
     padding: 140px 0 120px;
     position: relative;
     overflow: hidden;
