@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rystien Coins</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-content">
+                <a href="index.html" class="auth-logo">
+                    <img src="images/logo.png" alt="Rystien Coins">
+                </a>
+                <h1>Welcome Back</h1>
+                <p>Login to access your account and manage your finances</p>
+                
+                <form class="auth-form" id="loginForm">
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword()">
+                                <i class="fas fa-eye" id="toggleIcon"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-options">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="remember">
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                    
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i> Continue with Google
+                        </button>
+                    </div>
+                    
+                    <p class="auth-switch">
+                        Don't have an account? <a href="register.html">Register here</a>
+                    </p>
+                </form>
+                
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+        
+        <div class="auth-right">
+            <div class="auth-overlay">
+                <h2>Quick Access to Loans</h2>
+                <p>Get approved in 24 hours with competitive rates and flexible terms</p>
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Fast Approval Process</li>
+                    <li><i class="fas fa-check-circle"></i> Secure & Trusted Platform</li>
+                    <li><i class="fas fa-check-circle"></i> 5000+ Happy Clients</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Customer Support</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('password');
+            const toggleIcon = document.getElementById('toggleIcon');
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+        
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Login functionality will be implemented with backend integration.');
+        });
+    </script>
+</body>
+</html>

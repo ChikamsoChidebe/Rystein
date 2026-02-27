@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Apply for a loan with Rystien Coins. Fast approval, competitive rates, and flexible repayment terms. Get your loan in 24 hours.">
     <title>Apply for Loan - Rystien Coins</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -14,7 +13,11 @@
             <div class="container">
                 <div class="nav-wrapper">
                     <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="Rystien Coins Logo" class="logo-image">
+                        <div class="logo-icon">RC</div>
+                        <div class="logo-text">
+                            <span class="logo-name">Rystien Coins</span>
+                            <span class="logo-tagline">QUICK ACCESS TO LOAN</span>
+                        </div>
                     </a>
                     <button class="mobile-toggle" id="mobileToggle">
                         <span></span>
@@ -25,10 +28,10 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="apply.html" class="active">Apply for Loan</a></li>
                         <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
-                        <li><a href="apply.html" class="btn-primary-nav">Get Started</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html" class="btn-primary-nav">Register</a></li>
                     </ul>
                 </div>
             </div>
@@ -213,53 +216,15 @@
                         <div class="form-group">
                             <label style="display: flex; align-items: center; gap: 10px;">
                                 <input type="checkbox" name="terms" required>
-                                <span>I agree to the <a href="terms-conditions.html" style="color: var(--primary-yellow);">Terms and Conditions</a> and <a href="privacy-policy.html" style="color: var(--primary-yellow);">Privacy Policy</a></span>
+                                <span>I agree to the <a href="#" style="color: var(--primary-yellow);">Terms and Conditions</a> and <a href="#" style="color: var(--primary-yellow);">Privacy Policy</a></span>
                             </label>
                         </div>
                         <div class="form-buttons">
                             <button type="button" class="btn btn-outline" onclick="prevStep()">Previous</button>
-                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">Submit Application</button>
                         </div>
                     </div>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <section class="why-choose" style="padding: 60px 0;">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Apply With Us?</h2>
-            </div>
-            <div class="features-list" style="max-width: 800px; margin: 0 auto;">
-                <div class="feature-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>Fast Approval</h4>
-                        <p>Get your loan approved within 24 hours</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>Secure Process</h4>
-                        <p>Your information is encrypted and protected</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>Flexible Terms</h4>
-                        <p>Choose repayment terms that work for you</p>
-                    </div>
-                </div>
-                <div class="feature-item">
-                    <i class="fas fa-check-circle"></i>
-                    <div>
-                        <h4>No Hidden Fees</h4>
-                        <p>Transparent pricing with no surprises</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -268,54 +233,25 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-col">
-                    <a href="index.html" class="footer-logo">
-                        <img src="images/logo.png" alt="Rystien Coins Logo" class="logo-image">
-                    </a>
-                    <p>Your trusted partner for loans, savings, investments, and financial services in Lagos, Nigeria.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <div class="footer-logo">
+                        <div class="logo-icon">RC</div>
+                        <div class="logo-text">
+                            <span class="logo-name">Rystien Coins</span>
+                            <span class="logo-tagline">QUICK ACCESS TO LOAN</span>
+                        </div>
                     </div>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="apply.html">Apply for Loan</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="services.html#personal-loans">Personal Loans</a></li>
-                        <li><a href="services.html#business-loans">Business Loans</a></li>
-                        <li><a href="services.html#savings">Savings & Investment</a></li>
-                        <li><a href="services.html#proof-of-funds">Proof of Funds</a></li>
-                        <li><a href="services.html#asset-acquisition">Asset Acquisition</a></li>
-                    </ul>
+                    <p>Your trusted partner for loans, savings, investments, and financial services in Lagos, Nigeria.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Contact Us</h4>
                     <ul class="contact-info">
-                        <li><i class="fas fa-map-marker-alt"></i> Suite 13, First Floor, Cometstar Building, Plot 1573, 4th Avenue, Festac Town, Lagos</li>
                         <li><i class="fas fa-phone"></i> 07048404115, 08100071824</li>
                         <li><i class="fas fa-envelope"></i> info@rystiencoins.com</li>
-                        <li><i class="fas fa-clock"></i> Mon - Fri: 9AM - 5PM</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2024 Rystien Coins. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="privacy-policy.html">Privacy Policy</a>
-                    <a href="terms-conditions.html">Terms & Conditions</a>
-                    <a href="faq.html">FAQ</a>
-                </div>
             </div>
         </div>
     </footer>
@@ -328,7 +264,9 @@
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-config.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/apply.js"></script>
+    <script src="js/apply-supabase.js"></script>
 </body>
 </html>

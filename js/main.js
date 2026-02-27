@@ -5,6 +5,7 @@ const navMenu = document.getElementById('navMenu');
 if (mobileToggle) {
     mobileToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
+        mobileToggle.classList.toggle('active');
     });
 }
 

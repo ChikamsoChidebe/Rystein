@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Rystien Coins</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-content">
+                <a href="index.html" class="auth-logo">
+                    <img src="images/logo.png" alt="Rystien Coins">
+                </a>
+                <h1>Create Account</h1>
+                <p>Join thousands of satisfied clients and start your financial journey</p>
+                
+                <form class="auth-form" id="registerForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> First Name</label>
+                            <input type="text" name="firstName" placeholder="First name" required>
+                        </div>
+                        <div class="form-group">
+                            <label><i class="fas fa-user"></i> Last Name</label>
+                            <input type="text" name="lastName" placeholder="Last name" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-envelope"></i> Email Address</label>
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-phone"></i> Phone Number</label>
+                        <input type="tel" name="phone" placeholder="Enter your phone number" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Password</label>
+                        <div class="password-input">
+                            <input type="password" name="password" id="password" placeholder="Create a password" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('password', 'toggleIcon1')">
+                                <i class="fas fa-eye" id="toggleIcon1"></i>
+                            </button>
+                        </div>
+                        <small class="password-hint">At least 8 characters with letters and numbers</small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label><i class="fas fa-lock"></i> Confirm Password</label>
+                        <div class="password-input">
+                            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm your password" required>
+                            <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword', 'toggleIcon2')">
+                                <i class="fas fa-eye" id="toggleIcon2"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block">Create Account</button>
+                    
+                    <div class="auth-divider">
+                        <span>OR</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i> Sign up with Google
+                        </button>
+                    </div>
+                    
+                    <p class="auth-switch">
+                        Already have an account? <a href="login.html">Login here</a>
+                    </p>
+                </form>
+                
+                <a href="index.html" class="back-home">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+            </div>
+        </div>
+        
+        <div class="auth-right">
+            <div class="auth-overlay">
+                <h2>Start Your Financial Journey</h2>
+                <p>Access loans, savings, investments, and more with Rystien Coins</p>
+                <ul class="auth-features">
+                    <li><i class="fas fa-check-circle"></i> Instant Loan Approval</li>
+                    <li><i class="fas fa-check-circle"></i> High Interest Savings</li>
+                    <li><i class="fas fa-check-circle"></i> Investment Opportunities</li>
+                    <li><i class="fas fa-check-circle"></i> Proof of Funds Service</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function togglePassword(inputId, iconId) {
+            const passwordInput = document.getElementById(inputId);
+            const toggleIcon = document.getElementById(iconId);
+            
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleIcon.classList.remove('fa-eye');
+                toggleIcon.classList.add('fa-eye-slash');
+            } else {
+                passwordInput.type = 'password';
+                toggleIcon.classList.remove('fa-eye-slash');
+                toggleIcon.classList.add('fa-eye');
+            }
+        }
+        
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const password = document.querySelector('[name="password"]').value;
+            const confirmPassword = document.querySelector('[name="confirmPassword"]').value;
+            
+            if (password !== confirmPassword) {
+                alert('Passwords do not match!');
+                return;
+            }
+            
+            alert('Registration functionality will be implemented with backend integration.');
+        });
+    </script>
+</body>
+</html>
